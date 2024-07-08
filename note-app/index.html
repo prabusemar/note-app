@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabusemar's Note</title>
+    <meta name="description"
+        content="Notes App adalah aplikasi pencatatan sederhana yang memungkinkan pengguna untuk membuat, melihat, dan mengelola catatan.">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components/app-bar.css">
+    <link rel="stylesheet" href="styles/components/note-item.css">
+    <link rel="stylesheet" href="styles/components/note-form.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- App Bar -->
+    <app-bar></app-bar>
+
+    <main class="container mt-4">
+        <!-- Formulir Tambah Catatan -->
+        <note-form></note-form>
+
+        <!-- Daftar Catatan -->
+        <section class="notes-list">
+            <!-- Item Catatan akan dimuat di sini -->
+        </section>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="scripts/data/notes-data.js"></script>
+    <script src="scripts/components/app-bar.js"></script>
+    <script src="scripts/components/note-item.js"></script>
+    <script src="scripts/components/note-form.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
